@@ -7,10 +7,22 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
+<div id="user_nav">  
+  <% if user_signed_in? %>  
+    Connecté en tant que<%= current_user.email %>. Pas vous?  
+    <%= link_to "Déconnecter", destroy_user_session_path %>  
+  <% else %>  
+    <%= link_to "S'enregistrer", new_user_registration_path %> or  
+    <%= link_to "Connexion", new_user_session_path %>  
+  <% end %>  
+</div>  
   <h1> MyLeisureList</h1>
   <div id="content">
     <% unless flash[:notice].blank? %> 
-      <div id="notification"><%= flash[:notice] %></div> 
+      <div id="notification"><%= notice %></div> 
+    <% end %>
+    <% unless flash[:alert].blank? %> 
+      <div id="alert"><%= alert %></div> 
     <% end %>
     <%= yield %>
   </div>

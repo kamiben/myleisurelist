@@ -1,7 +1,7 @@
 Myleisurelist::Application.routes.draw do
   
 
-  devise_for :users
+  devise_for :users, :path_names => { :sign_up => "enregistrement", :sign_in => "connexion" }  
 
   resources :medias #, :has_many => :consultes
   resources :consultes
