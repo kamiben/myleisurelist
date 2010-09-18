@@ -10,7 +10,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100918130823) do
+ActiveRecord::Schema.define(:version => 20100918134542) do
+
+  create_table "consultes", :force => true do |t|
+    t.integer  "id_user"
+    t.integer  "id_media"
+    t.string   "etat"
+    t.integer  "nb_vus"
+    t.integer  "note"
+    t.text     "commentaire"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "medias", :force => true do |t|
     t.string   "nom"

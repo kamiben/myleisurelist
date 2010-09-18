@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  id_user: 1
+  id_media: 1
+  etat: MyString
+  nb_vus: 1
+  note: 1
+  commentaire: MyText
+
+two:
+  id_user: 1
+  id_media: 1
+  etat: MyString
+  nb_vus: 1
+  note: 1
+  commentaire: MyText
