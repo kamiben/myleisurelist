@@ -1,0 +1,15 @@
+<% form_for @media do |f| %>
+<p> Nom : <br/>
+<%= f.text_field :nom %> 
+</p>
+<p> Description : <br/>
+<%= f.text_area :description %> 
+</p>
+<p> Nombre d'épisodes : <br/>
+<%= f.text_field :nbepisodes %> 
+</p>
+<p>
+<%= submit_tag %> 
+</p> 
+<% end %> 
+
