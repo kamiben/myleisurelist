@@ -1,8 +1,8 @@
 Myleisurelist::Application.routes.draw do
-  get "consultes/create"
-
-  resources :medias
   
+
+  resources :medias #, :has_many => :consultes
+  resources :consultes
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -52,7 +52,7 @@ Myleisurelist::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => "welcome#index"
+   root :to => "medias#index"
 
   # See how all your routes lay out with "rake routes"
 
