@@ -1,6 +1,8 @@
 Myleisurelist::Application.routes.draw do
   
 
+  get "profil/show"
+
   devise_for :users, :path_names => { :sign_up => "enregistrement", :sign_in => "connexion" }  
 
   resources :medias #, :has_many => :consultes
