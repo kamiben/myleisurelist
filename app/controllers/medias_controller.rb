@@ -17,5 +17,9 @@ class MediasController < ApplicationController
   def index
     @media = Media.find(:first, :order => 'RANDOM()')
   end
+  
+  def show
+    @media = Media.find(params[:id])
+  end
 
 end
