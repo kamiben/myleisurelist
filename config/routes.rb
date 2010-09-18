@@ -1,6 +1,8 @@
 Myleisurelist::Application.routes.draw do
   
 
+  devise_for :users
+
   resources :medias #, :has_many => :consultes
   resources :consultes
   # The priority is based upon order of creation:
