@@ -1,0 +1,7 @@
+<% div_for(media) do %> <!-- Crée automatiquement un div pour l'objet  ex: <div id="story_2" class="story>-->
+  <h3><%= link_to media.nom, media %></h3>
+  <p>
+Description : <%= media.description %> <br/>
+Nb episodes : <%= media.nbepisodes %> <br/>
+  </p>
+<% end %>
