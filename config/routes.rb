@@ -1,4 +1,6 @@
 Myleisurelist::Application.routes.draw do
+  get "consultes/create"
+
   resources :medias
   
   # The priority is based upon order of creation:
