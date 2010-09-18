@@ -1,0 +1,11 @@
+syntax: glob
+/myleisurelist.bundle
+/db/*.sqlite3
+/log/*.log
+/tmp/**/*
+/tmp/*
+/log/*
+*.log
+*.lock
+*.sqlite3
+tmp
