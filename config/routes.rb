@@ -1,4 +1,6 @@
 Myleisurelist::Application.routes.draw do
+  get "medias/index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
