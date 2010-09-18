@@ -14,11 +14,8 @@ class MediasController < ApplicationController
     end
   end
   
-  
-  
   def index
     @media = Media.find(:first, :order => 'RANDOM()')
-
   end
 
 end
