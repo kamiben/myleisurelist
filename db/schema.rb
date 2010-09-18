@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100918081644) do
+ActiveRecord::Schema.define(:version => 20100918130823) do
 
   create_table "medias", :force => true do |t|
     t.string   "nom"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(:version => 20100918081644) do
     t.string   "auteur"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "categorie"
   end
 
 end
