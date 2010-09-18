@@ -6,8 +6,12 @@ class MediasController < ApplicationController
   
   def create
     @media = Media.new(params[:media])
-    @media.save
-    redirect_to medias_path
+    if @media.save
+      flash[:notice] = 'Nouveau média enregistré avec succès'
+      redirect_to medias_path
+    else
+      render :action => 'new'
+    end
   end
   
   

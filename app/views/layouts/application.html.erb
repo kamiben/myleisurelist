@@ -9,7 +9,10 @@
 <body>
   <h1> MyLeisureList</h1>
   <div id="content">
-  <%= yield %>
+    <% unless flash[:notice].blank? %> 
+      <div id="notification"><%= flash[:notice] %></div> 
+    <% end %>
+    <%= yield %>
   </div>
 </body>
 </html>
